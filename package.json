@@ -6,7 +6,8 @@
     "tsc:w": "tsc -w",
     "lite": "lite-server",
     "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
-    "test": "lite-server --open=unit-test"
+    "test": "lite-server --open=unit-test",
+    "start:test": "concurrent \"npm run tsc:w\" \"npm run test\" "
   },
   "license": "ISC",
   "dependencies": {
